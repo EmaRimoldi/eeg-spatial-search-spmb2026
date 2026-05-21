@@ -1,0 +1,46 @@
+seed: 43
+master_port: 53343
+multitask: false
+model_type: labram
+fs: 200
+
+data:
+  datasets:
+    bcic_2a: finetune
+  batch_size: 64
+  num_workers: 4
+
+model:
+  pretrained_path: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/LaBraM/checkpoints/labram-base.pth
+  eeg_size: 800
+  patch_size: 200
+  classifier_head:
+    head_type: avg_pool
+    hidden_dims: [128]
+    dropout: 0.3
+
+training:
+  max_epochs: 30
+  weight_decay: 0.05
+  max_grad_norm: 3.0
+  lr_schedule: cosine
+  max_lr: 8.0e-4
+  encoder_lr_scale: 0.1
+  warmup_epochs: 5
+  warmup_scale: 1.0e-2
+  min_lr: 8.0e-6
+  layer_decay: 0.9
+  use_amp: true
+  freeze_encoder: false
+  label_smoothing: 0.1
+  model_ema: false
+
+logging:
+  experiment_name: labram_bcic2a_table2_seed43
+  run_dir: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/eegfm_bench
+  use_cloud: false
+  cloud_backend: wandb
+  project: labram
+  tags: [eegfm-bench, bcic2a, table2, single-task, full-parameter, replication]
+  log_step_interval: 1
+  ckpt_interval: 5

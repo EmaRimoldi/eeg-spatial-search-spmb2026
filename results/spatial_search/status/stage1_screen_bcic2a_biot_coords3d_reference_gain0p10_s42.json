@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_bcic2a_biot_coords3d_reference_gain0p10_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 3,
+  "config": "/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage1_screen/bcic2a/biot/stage1_screen_bcic2a_biot_coords3d_reference_gain0p10_s42.yaml",
+  "updated_at": "2026-05-17T10:19:17.236882Z"
+}

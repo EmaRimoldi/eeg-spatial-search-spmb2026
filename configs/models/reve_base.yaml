@@ -1,0 +1,24 @@
+# REVE base model configuration
+# Commit hash: see docs/notes/external_repo_commits.txt
+
+backbone: reve
+embed_dim: 512
+checkpoint: huggingface  # or local path under checkpoints/downloaded/reve/
+injection_mode: replace   # replace | reve_default | augment
+
+# Freeze policy for downstream fine-tuning
+freeze_policy: head_only  # frozen | head_only | partial | full
+n_frozen_layers: 20       # used only when freeze_policy=partial
+
+dropout: 0.1
+
+# Reference: external/reve_eeg/hf/reve-base/config.json
+reve_arch:
+  depth: 22
+  embed_dim: 512
+  heads: 8
+  head_dim: 64
+  mlp_dim_ratio: 2.66
+  patch_size: 200
+  patch_overlap: 20
+  freqs: 4

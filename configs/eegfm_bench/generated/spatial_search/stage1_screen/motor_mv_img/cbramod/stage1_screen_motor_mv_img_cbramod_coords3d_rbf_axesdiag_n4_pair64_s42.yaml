@@ -1,0 +1,49 @@
+backbone: cbramod
+spatial_variant: coords3d_rbf
+freeze_policy: full
+dataset: motor_mv_img
+num_classes: 4
+seed: 42
+epochs: 50
+batch_size: 128
+num_workers: 4
+allow_synthetic_fallback: false
+smoke_test: false
+checkpoint: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/CBraMod/pretrained_weights/pretrained_weights.pth
+optimizer:
+  name: adamw
+  lr: 0.0001
+  weight_decay: 0.05
+  backbone_lr: 1.0e-05
+  head_lr: 0.0001
+  spatial_lr: 0.0001
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+early_stopping_patience: 1000
+wrapper_kwargs:
+  n_channels: 64
+  eeg_size: 800
+  classifier_head:
+    head_type: flatten_mlp
+    dropout: 0.1
+  graph_depth: 0
+  native_pair_dim: 64
+  spatial_embedding_kwargs: &id001
+    anchor_mode: axes_diagonal
+    n_rbf: 4
+search:
+  run_id: stage1_screen_motor_mv_img_cbramod_coords3d_rbf_axesdiag_n4_pair64_s42
+  stage: stage1_screen
+  dataset: motor_mv_img
+  dataset_slug: motor_mv_img
+  backbone: cbramod
+  variant: coords3d_rbf
+  seed: 42
+  hparams_id: coords3d_rbf_axesdiag_n4_pair64
+  hparams:
+    graph_depth: 0
+    native_pair_dim: 64
+    spatial_embedding_kwargs: *id001
+  manifest: results/spatial_search/manifest.tsv
+  baseline_fixed_externally: true

@@ -1,0 +1,31 @@
+# CBraMod full fine-tuning configuration
+# Mirrors cbramod_base.yaml but uses full backbone updates.
+
+backbone: cbramod
+embed_dim: 200
+checkpoint: external/CBraMod/pretrained_weights/pretrained_weights.pth
+
+freeze_policy: full
+input_scale: 0.01
+patch_size: 200
+native_spatial_mode: spatial_attn_bias
+native_pair_dim: 64
+spatial_init_gain: 0.15
+
+dropout: 0.1
+
+optimizer:
+  name: adamw
+  lr: 5.0e-5
+  backbone_lr: 5.0e-5
+  head_lr: 5.0e-4
+  spatial_lr: 1.0e-3
+  weight_decay: 1.0e-4
+
+cbramod_arch:
+  patch_size: 200
+  d_model: 200
+  out_dim: 200
+  dim_ffn: 800
+  depth: 12
+  num_heads: 8

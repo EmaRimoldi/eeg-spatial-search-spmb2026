@@ -1,0 +1,59 @@
+seed: 42
+master_port: 51123
+multitask: true
+model_type: reve
+fs: 200
+
+data:
+  datasets:
+    bcic_2a: finetune
+  batch_size: 32
+  num_workers: 2
+
+model:
+  pretrained_path: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/checkpoints/reve/model.safetensors
+  pos_bank_pretrained_path: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/checkpoints/reve/positions/model.safetensors
+  embed_dim: 512
+  depth: 22
+  heads: 8
+  head_dim: 64
+  mlp_dim_ratio: 2.66
+  use_geglu: true
+  freqs: 4
+  noise_ratio: 0.0025
+  patch_size: 200
+  patch_overlap: 20
+  dropout: 0.1
+  classifier_head:
+    head_type: avg_pool
+    hidden_dims: [128]
+    dropout: 0.3
+
+training:
+  max_epochs: 12
+  optimizer_name: adamw
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  lr_schedule: reduce_on_plateau
+  max_lr: 2.4e-4
+  min_lr: 2.4e-5
+  eps: 1.0e-9
+  warmup_epochs: 2
+  warmup_scale: 1.0e-1
+  encoder_lr_scale: 0.1
+  use_amp: true
+  freeze_encoder: false
+  warmup_freeze_encoder: true
+  warmup_freeze_encoder_epochs: 1
+  adam_beta_1: 0.9
+  adam_beta_2: 0.95
+
+logging:
+  experiment_name: reve_bcic2a
+  run_dir: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/eegfm_bench
+  use_cloud: false
+  cloud_backend: wandb
+  project: reve
+  tags: [eegfm-bench, bcic2a, bnci2014_001, reproduction]
+  log_step_interval: 1
+  ckpt_interval: 5

@@ -1,0 +1,16 @@
+dataset	model	seed	config	job_name	dataset_key
+workload	biot	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/biot_seed42.yaml	efm_biot_workload_t2_s42	workload
+workload	biot	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/biot_seed43.yaml	efm_biot_workload_t2_s43	workload
+workload	biot	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/biot_seed44.yaml	efm_biot_workload_t2_s44	workload
+workload	biot	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/biot_seed45.yaml	efm_biot_workload_t2_s45	workload
+workload	biot	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/biot_seed46.yaml	efm_biot_workload_t2_s46	workload
+workload	cbramod	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/cbramod_seed42.yaml	efm_cbramod_workload_t2_s42	workload
+workload	cbramod	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/cbramod_seed43.yaml	efm_cbramod_workload_t2_s43	workload
+workload	cbramod	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/cbramod_seed44.yaml	efm_cbramod_workload_t2_s44	workload
+workload	cbramod	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/cbramod_seed45.yaml	efm_cbramod_workload_t2_s45	workload
+workload	cbramod	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/cbramod_seed46.yaml	efm_cbramod_workload_t2_s46	workload
+workload	labram	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/labram_seed42.yaml	efm_labram_workload_t2_s42	workload
+workload	labram	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/labram_seed43.yaml	efm_labram_workload_t2_s43	workload
+workload	labram	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/labram_seed44.yaml	efm_labram_workload_t2_s44	workload
+workload	labram	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/labram_seed45.yaml	efm_labram_workload_t2_s45	workload
+workload	labram	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/workload_table2_5seed/labram_seed46.yaml	efm_labram_workload_t2_s46	workload

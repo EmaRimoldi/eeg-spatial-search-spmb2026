@@ -1,0 +1,16 @@
+seed	model	job_id	job_name	config	dependency
+42	biot	13984502	efm_biot_bcic2a_t2_s42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/biot_seed42.yaml	none
+42	cbramod	13984503	efm_cbramod_bcic2a_t2_s42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/cbramod_seed42.yaml	none
+42	labram	13984504	efm_labram_bcic2a_t2_s42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/labram_seed42.yaml	none
+43	biot	13984505	efm_biot_bcic2a_t2_s43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/biot_seed43.yaml	13984502:13984503:13984504
+43	cbramod	13984506	efm_cbramod_bcic2a_t2_s43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/cbramod_seed43.yaml	13984502:13984503:13984504
+43	labram	13984507	efm_labram_bcic2a_t2_s43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/labram_seed43.yaml	13984502:13984503:13984504
+44	biot	13984508	efm_biot_bcic2a_t2_s44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/biot_seed44.yaml	13984505:13984506:13984507
+44	cbramod	13984509	efm_cbramod_bcic2a_t2_s44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/cbramod_seed44.yaml	13984505:13984506:13984507
+44	labram	13984510	efm_labram_bcic2a_t2_s44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/labram_seed44.yaml	13984505:13984506:13984507
+45	biot	13984511	efm_biot_bcic2a_t2_s45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/biot_seed45.yaml	13984508:13984509:13984510
+45	cbramod	13984512	efm_cbramod_bcic2a_t2_s45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/cbramod_seed45.yaml	13984508:13984509:13984510
+45	labram	13984513	efm_labram_bcic2a_t2_s45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/labram_seed45.yaml	13984508:13984509:13984510
+46	biot	13984514	efm_biot_bcic2a_t2_s46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/biot_seed46.yaml	13984511:13984512:13984513
+46	cbramod	13984515	efm_cbramod_bcic2a_t2_s46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/cbramod_seed46.yaml	13984511:13984512:13984513
+46	labram	13984516	efm_labram_bcic2a_t2_s46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/bcic2a_table2_5seed_serial/labram_seed46.yaml	13984511:13984512:13984513

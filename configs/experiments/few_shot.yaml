@@ -1,0 +1,55 @@
+# Few-shot / limited-label experiment
+# Stage 5: Test whether spatial priors matter more under scarce supervision
+#
+# Scientific target: if geometry helps most when labels are few,
+# this is a valuable practical result
+
+experiment:
+  name: few_shot
+  stage: 5
+
+model:
+  backbone: reve
+  checkpoint: huggingface
+  embed_dim: 512
+  freeze_policy: head_only
+
+spatial_variants:
+  - none
+  - channel_id
+  - coords3d
+  - coords3d_reference
+  - topology_agnostic
+
+dataset:
+  name: BNCI2014_001
+  task: motor_imagery
+  source: moabb
+  num_classes: 4
+
+# Label fractions to test
+label_fractions:
+  - 0.01   # ~1% of training data
+  - 0.05   # ~5%
+  - 0.10   # ~10%
+  - 0.25   # ~25%
+  - 1.00   # full dataset (100%)
+
+training:
+  seeds: [42, 123, 456]
+  epochs: 100
+  batch_size: 16  # smaller batch for very low-data regimes
+  optimizer:
+    name: adamw
+    lr: 1.0e-4
+    weight_decay: 1.0e-4
+  early_stopping:
+    patience: 20
+    metric: val_balanced_accuracy
+
+evaluation:
+  metrics: [accuracy, balanced_accuracy]
+  plot_learning_curves: true
+
+logging:
+  run_dir: results/logs

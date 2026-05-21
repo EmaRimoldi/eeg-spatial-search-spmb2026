@@ -1,0 +1,16 @@
+dataset	model	seed	config	job_name	dataset_key
+physiomi	biot	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/biot_seed42.yaml	efm_biot_physiomi_t2_s42	motor_mv_img
+physiomi	biot	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/biot_seed43.yaml	efm_biot_physiomi_t2_s43	motor_mv_img
+physiomi	biot	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/biot_seed44.yaml	efm_biot_physiomi_t2_s44	motor_mv_img
+physiomi	biot	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/biot_seed45.yaml	efm_biot_physiomi_t2_s45	motor_mv_img
+physiomi	biot	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/biot_seed46.yaml	efm_biot_physiomi_t2_s46	motor_mv_img
+physiomi	cbramod	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/cbramod_seed42.yaml	efm_cbramod_physiomi_t2_s42	motor_mv_img
+physiomi	cbramod	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/cbramod_seed43.yaml	efm_cbramod_physiomi_t2_s43	motor_mv_img
+physiomi	cbramod	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/cbramod_seed44.yaml	efm_cbramod_physiomi_t2_s44	motor_mv_img
+physiomi	cbramod	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/cbramod_seed45.yaml	efm_cbramod_physiomi_t2_s45	motor_mv_img
+physiomi	cbramod	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/cbramod_seed46.yaml	efm_cbramod_physiomi_t2_s46	motor_mv_img
+physiomi	labram	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/labram_seed42.yaml	efm_labram_physiomi_t2_s42	motor_mv_img
+physiomi	labram	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/labram_seed43.yaml	efm_labram_physiomi_t2_s43	motor_mv_img
+physiomi	labram	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/labram_seed44.yaml	efm_labram_physiomi_t2_s44	motor_mv_img
+physiomi	labram	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/labram_seed45.yaml	efm_labram_physiomi_t2_s45	motor_mv_img
+physiomi	labram	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/physiomi_table2_5seed/labram_seed46.yaml	efm_labram_physiomi_t2_s46	motor_mv_img

@@ -1,0 +1,75 @@
+# Core spatial ablation experiment
+# Stage 2: Answer the main paper question under one controlled task
+#
+# Setup:
+#   - Backbone: REVE
+#   - Dataset: MOABB BNCI2014_001
+#   - All 7 spatial variants
+#   - Training regimes: head_only, full
+#   - Seeds: 3-5
+#   - Total runs: 7 variants × 2 regimes × 3 seeds = 42 minimum
+
+experiment:
+  name: core_ablation
+  stage: 2
+
+model:
+  backbone: reve
+  checkpoint: huggingface
+  embed_dim: 512
+  dropout: 0.1
+  injection_mode: replace
+
+dataset:
+  name: BNCI2014_001
+  task: motor_imagery
+  source: moabb
+  num_classes: 4
+  sfreq: 250
+
+spatial_variants:
+  - none
+  - channel_id
+  - coords2d
+  - coords3d
+  - coords3d_distbias
+  - coords3d_reference
+  - topology_agnostic
+
+training_regimes:
+  - name: linear_probe
+    freeze_policy: frozen
+    train_head_only: true
+
+  - name: head_only
+    freeze_policy: head_only
+    train_head_only: false  # also train spatial embedding
+
+  - name: partial_finetune
+    freeze_policy: partial
+    n_frozen_layers: 18
+
+training:
+  seeds: [42, 123, 456]
+  epochs: 100
+  batch_size: 32
+  optimizer:
+    name: adamw
+    lr: 1.0e-4
+    weight_decay: 1.0e-4
+  scheduler:
+    name: cosine
+    warmup_epochs: 10
+  early_stopping:
+    patience: 15
+    metric: val_balanced_accuracy
+
+evaluation:
+  metrics: [accuracy, balanced_accuracy, auroc]
+  pairwise_tests: true
+
+logging:
+  run_dir: results/logs
+  save_config: true
+  save_git_state: true
+  save_channel_metadata_snapshot: true

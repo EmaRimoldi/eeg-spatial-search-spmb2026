@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+env/
+data/
+external/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+results/**/runs/
+results/**/slurm_logs/
+results/**/generated_configs/
+spatial_search*/runs/
+spatial_search*/slurm_logs/

@@ -1,0 +1,41 @@
+seed: 44
+master_port: 52244
+multitask: false
+model_type: cbramod
+fs: 200
+
+data:
+  datasets:
+    bcic_2a: finetune
+  batch_size: 32
+  num_workers: 2
+
+model:
+  pretrained_path: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/CBraMod/pretrained_weights/pretrained_weights.pth
+  classifier_head:
+    head_type: avg_pool
+    hidden_dims: [128]
+    dropout: 0.3
+
+training:
+  max_epochs: 50
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  lr_schedule: cosine
+  max_lr: 1.0e-4
+  encoder_lr_scale: 0.1
+  warmup_epochs: 5
+  warmup_scale: 1.0e-2
+  min_lr: 1.0e-6
+  use_amp: true
+  freeze_encoder: false
+
+logging:
+  experiment_name: cbramod_bcic2a_table2_seed44
+  run_dir: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/eegfm_bench
+  use_cloud: false
+  cloud_backend: wandb
+  project: cbramod
+  tags: [eegfm-bench, bcic2a, table2, single-task, full-parameter, replication]
+  log_step_interval: 1
+  ckpt_interval: 5

@@ -1,0 +1,32 @@
+# CBraMod base model configuration
+# Primary implementation reference:
+#   external/EEG-FM-Bench/baseline/cbramod/
+#
+# Optional pretrained weights:
+#   https://huggingface.co/weighting666/CBraMod
+# Place the downloaded file at:
+#   external/CBraMod/pretrained_weights/pretrained_weights.pth
+
+backbone: cbramod
+embed_dim: 200
+checkpoint: external/CBraMod/pretrained_weights/pretrained_weights.pth
+
+freeze_policy: head_only
+input_scale: 0.01
+patch_size: 200
+
+# Native spatial conditioning inside CBraMod's spatial self-attention.
+# The gain stays small so spatial bias nudges token mixing instead of
+# overwhelming the pretrained backbone geometry.
+native_spatial_mode: spatial_attn_bias
+native_pair_dim: 64
+spatial_init_gain: 0.15
+dropout: 0.1
+
+cbramod_arch:
+  patch_size: 200
+  d_model: 200
+  out_dim: 200
+  dim_ffn: 800
+  depth: 12
+  num_heads: 8

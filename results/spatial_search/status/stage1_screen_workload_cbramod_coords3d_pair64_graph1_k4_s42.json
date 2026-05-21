@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_workload_cbramod_coords3d_pair64_graph1_k4_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 76,
+  "config": "configs/eegfm_bench/generated/spatial_search/stage1_screen/workload/cbramod/stage1_screen_workload_cbramod_coords3d_pair64_graph1_k4_s42.yaml",
+  "updated_at": "2026-05-21T21:42:13.575096Z"
+}

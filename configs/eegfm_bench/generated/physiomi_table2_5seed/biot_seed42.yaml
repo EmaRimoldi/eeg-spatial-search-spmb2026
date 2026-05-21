@@ -1,0 +1,51 @@
+# Table-2-style PhysioMI replication: full-parameter, single-task, avg_pool head.
+seed: 42
+master_port: 53142
+multitask: false
+model_type: biot
+fs: 200
+
+data:
+  datasets:
+    motor_mv_img: finetune
+  batch_size: 128
+  num_workers: 4
+
+model:
+  pretrained_path: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/BIOT/pretrained-models/EEG-six-datasets-18-channels.ckpt
+  emb_size: 256
+  heads: 8
+  depth: 4
+  max_channels: 18
+  n_fft: 200
+  hop_length: 100
+  use_channel_conv: true
+  classifier_head:
+    head_type: avg_pool
+    hidden_dims: [128]
+    dropout: 0.3
+
+training:
+  max_epochs: 50
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  lr_schedule: cosine
+  max_lr: 4.0e-4
+  encoder_lr_scale: 0.1
+  warmup_epochs: 5
+  warmup_scale: 1.0e-2
+  min_lr: 4.0e-6
+  use_amp: false
+  freeze_encoder: false
+  lora:
+    use_lora: false
+
+logging:
+  experiment_name: biot_physiomi_table2_seed42
+  run_dir: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/eegfm_bench
+  use_cloud: false
+  cloud_backend: wandb
+  project: biot
+  tags: [eegfm-bench, physiomi, table2-style, full-parameter, single-task, avg-pool]
+  log_step_interval: 1
+  ckpt_interval: 5

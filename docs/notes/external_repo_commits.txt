@@ -1,0 +1,12 @@
+# External Repository Commit Hashes
+# Recorded: 2026-04-08T05:13:08Z
+# Purpose: Reproducibility — exact versions used in this project
+
+EEG-FM-Bench 9b34c0885a4dbd126b37ca1ac212a4a6166aa177
+reve_eeg 06a7059a07c3dabd80aee60c3dbc1eca4bdbe1c7
+LaBraM c431221e6cfd23dbfa9950e0180682fb322b0548
+CBraMod 20a57c4a905bc1a4eb5f9f156667f142cf5155b3
+BIOT d138e32634e52ae9fa6ec98ac9c4087b14ca869a
+
+# To restore exact state for any repo:
+#   git -C external/<repo> checkout <hash>

@@ -1,0 +1,47 @@
+backbone: cbramod
+spatial_variant: coords3d
+freeze_policy: full
+dataset: bcic_2a
+num_classes: 4
+seed: 42
+epochs: 50
+batch_size: 32
+num_workers: 2
+allow_synthetic_fallback: false
+smoke_test: false
+checkpoint: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/CBraMod/pretrained_weights/pretrained_weights.pth
+optimizer:
+  name: adamw
+  lr: 0.0001
+  weight_decay: 0.01
+  backbone_lr: 1.0e-05
+  head_lr: 0.0001
+  spatial_lr: 0.0001
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+early_stopping_patience: 1000
+wrapper_kwargs:
+  n_channels: 22
+  eeg_size: 800
+  classifier_head:
+    head_type: avg_pool
+    hidden_dims:
+    - 128
+    dropout: 0.3
+  graph_depth: 0
+  native_pair_dim: 32
+search:
+  run_id: stage1_screen_bcic2a_cbramod_coords3d_pair32_s42
+  stage: stage1_screen
+  dataset: bcic_2a
+  dataset_slug: bcic2a
+  backbone: cbramod
+  variant: coords3d
+  seed: 42
+  hparams_id: coords3d_pair32
+  hparams:
+    graph_depth: 0
+    native_pair_dim: 32
+  manifest: results/spatial_search/manifest.tsv
+  baseline_fixed_externally: true

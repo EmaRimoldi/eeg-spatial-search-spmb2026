@@ -1,0 +1,66 @@
+# Pilot experiment configuration
+# Stage 1: Verify the pipeline works before large sweeps
+#
+# Setup:
+#   - Backbone: REVE
+#   - Dataset: MOABB BNCI2014_001 (motor imagery, 22 channels)
+#   - Spatial variants: channel_id, coords2d, coords3d
+#   - Regime: head-only tuning
+#   - Seeds: 3
+#   - Total runs: 9
+
+experiment:
+  name: pilot
+  stage: 1
+
+model:
+  backbone: reve
+  checkpoint: huggingface
+  freeze_policy: head_only
+  embed_dim: 512
+  dropout: 0.1
+  injection_mode: replace
+
+dataset:
+  name: BNCI2014_001
+  task: motor_imagery
+  source: moabb
+  num_classes: 4
+  sfreq: 250
+  # Channel layout: 22-channel standard motor cortex array
+  channels: [Fz, FC3, FC1, FCz, FC2, FC4, C5, C3, C1, Cz, C2, C4, C6, CP3, CP1, CPz, CP2, CP4, P1, Pz, P2, POz]
+
+spatial_variants:
+  - channel_id
+  - coords2d
+  - coords3d
+
+training:
+  seeds: [42, 123, 456]
+  epochs: 50
+  batch_size: 32
+  optimizer:
+    name: adamw
+    lr: 1.0e-4
+    weight_decay: 1.0e-4
+  scheduler:
+    name: cosine
+    warmup_epochs: 5
+  early_stopping:
+    patience: 10
+    metric: val_accuracy
+
+evaluation:
+  metrics: [accuracy, balanced_accuracy, auroc]
+  save_predictions: true
+
+logging:
+  run_dir: results/logs
+  save_config: true
+  save_git_state: true
+  save_channel_metadata_snapshot: true
+
+success_criteria:
+  all_runs_complete: true
+  min_accuracy: 0.25  # above chance (4-class)
+  max_std_across_seeds: 0.10

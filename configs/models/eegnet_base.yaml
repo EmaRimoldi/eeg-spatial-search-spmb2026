@@ -1,0 +1,14 @@
+# EEGNet baseline configuration
+# No pretrained weights — trained from scratch
+
+backbone: eegnet
+embed_dim: 64  # spatial embedding dim only
+checkpoint: null  # no pretraining
+
+freeze_policy: full  # always full fine-tuning for EEGNet
+dropout: 0.5
+
+eegnet_arch:
+  F1: 8
+  D: 2
+  F2: 16

@@ -1,0 +1,50 @@
+backbone: biot
+spatial_variant: coords3d_reference
+freeze_policy: full
+dataset: workload
+num_classes: 2
+seed: 42
+epochs: 50
+batch_size: 128
+num_workers: 4
+allow_synthetic_fallback: false
+smoke_test: false
+checkpoint: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/BIOT/pretrained-models/EEG-six-datasets-18-channels.ckpt
+optimizer:
+  name: adamw
+  lr: 0.0004
+  weight_decay: 0.01
+  backbone_lr: 4.0e-05
+  head_lr: 0.0004
+  spatial_lr: 0.0004
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+early_stopping_patience: 1000
+wrapper_kwargs:
+  embed_dim: 256
+  heads: 8
+  depth: 4
+  max_channels: 18
+  input_channels: 19
+  use_channel_conv: true
+  router_init_mode: montage_prior
+  classifier_hidden_dims:
+  - 128
+  dropout: 0.3
+  n_fft: 200
+  hop_length: 100
+  spatial_init_gain: 0.1
+search:
+  run_id: stage1_screen_workload_biot_coords3d_reference_gain0p10_s42
+  stage: stage1_screen
+  dataset: workload
+  dataset_slug: workload
+  backbone: biot
+  variant: coords3d_reference
+  seed: 42
+  hparams_id: coords3d_reference_gain0p10
+  hparams:
+    spatial_init_gain: 0.1
+  manifest: results/spatial_search_biot_fix/manifest.tsv
+  baseline_fixed_externally: true

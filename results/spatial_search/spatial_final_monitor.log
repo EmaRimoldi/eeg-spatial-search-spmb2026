@@ -1,0 +1,734 @@
+[2026-05-17 10:35:26] starting spatial final monitor
+[2026-05-17 10:35:26] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 10:35:27] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 10:35:27] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 10:35:27] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 10:35:27] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 2 | 27.81 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 3 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 4 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 5 | coords3d_rbf | coords3d_rbf_axesdiag_n4_pair64 | 1 | 57.80 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 57.17 |  |
+[2026-05-17 10:35:27] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 57.17 |  |
+[2026-05-17 10:35:27] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 10:35:27] progress: 1/9 groups complete
+[2026-05-17 10:35:27] sleeping 600s before next check
+[2026-05-17 10:45:27] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 10:45:27] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 10:45:27] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 10:45:27] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 10:45:27] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 2 | 27.81 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 3 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 4 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 5 | coords3d_rbf | coords3d_rbf_axesdiag_n4_pair64 | 1 | 57.80 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 57.17 |  |
+[2026-05-17 10:45:27] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 57.17 |  |
+[2026-05-17 10:45:27] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 10:45:27] progress: 1/9 groups complete
+[2026-05-17 10:45:27] sleeping 600s before next check
+[2026-05-17 10:50:21] starting spatial final monitor
+[2026-05-17 10:50:21] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 10:50:21] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 10:50:21] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 10:50:21] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 10:50:21] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 3 | 27.33 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 3 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 4 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 5 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 6 | coords3d_rbf | coords3d_rbf_axesdiag_n4_pair64 | 1 | 57.80 |  |
+[2026-05-17 10:50:21] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 57.17 |  |
+[2026-05-17 10:50:21] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 10:50:21] progress: 2/9 groups complete
+[2026-05-17 10:50:21] sleeping 600s before next check
+[2026-05-17 11:00:21] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:00:22] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:00:22] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:00:22] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:00:22] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 3 | 27.33 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 5 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 6 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:00:22] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axesdiag_n4_pair64 | 1 | 57.80 |  |
+[2026-05-17 11:00:22] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 11:00:22] progress: 3/9 groups complete
+[2026-05-17 11:00:22] sleeping 600s before next check
+[2026-05-17 11:10:22] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:10:22] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:10:22] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:10:22] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:10:22] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 4 | 27.46 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:10:22] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:10:22] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 11:10:22] progress: 3/9 groups complete
+[2026-05-17 11:10:22] sleeping 600s before next check
+[2026-05-17 11:20:22] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:20:23] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:20:23] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:20:23] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:20:23] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 4 | 27.46 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:20:23] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:20:23] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 11:20:23] progress: 3/9 groups complete
+[2026-05-17 11:20:23] sleeping 600s before next check
+[2026-05-17 11:30:23] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:30:23] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:30:23] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:30:23] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:30:23] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:30:23] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:30:23] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 11:30:23] winners ready for promotion: workload/biot -> coords3d_rbf coords3d_rbf_axes_n6_gain0p10 bacc=0.5216666666666666, workload/labram -> coords3d_rbf coords3d_rbf_axes_n6_residual bacc=0.5733333333333333
+[2026-05-17 11:30:23] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/eegfm_spatial_search.py promote --leaderboard /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/leaderboard.filtered_for_stage2.tsv
+[2026-05-17 11:30:23] promote: appended_stage2_rows=8
+[2026-05-17 11:30:23] promote: manifest=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/manifest.tsv
+[2026-05-17 11:30:23] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:30:24] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:30:24] RUN sacct -j 14050185,14050186,14050187,14050188,14050189 --format=JobIDRaw,State -n -P
+[2026-05-17 11:30:24] RUN sbatch --parsable --job-name=ss2b_workload_biot --partition=pi_tpoggio,mit_preemptable --time=08:00:00 --cpus-per-task=8 --mem=32G --gres=gpu:1 --output=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_workload_biot_coords3d_rbf_%j.out --error=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_workload_biot_coords3d_rbf_%j.err /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/tmp/stage2_bundle_runner.sh /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/biot/stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s43.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/biot/stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s44.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/biot/stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s45.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/biot/stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s46.yaml
+[2026-05-17 11:30:24] submitted bundle job 14051395 for workload/biot coords3d_rbf coords3d_rbf_axes_n6_gain0p10
+[2026-05-17 11:30:24] updated manifest rows ['stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s43', 'stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s44', 'stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s45', 'stage2_promote_workload_biot_coords3d_rbf_axes_n6_gain0p10_s46'] with submitted_bundle=14051395
+[2026-05-17 11:30:24] RUN sbatch --parsable --job-name=ss2b_workload_labram --partition=pi_tpoggio,mit_preemptable --time=08:00:00 --cpus-per-task=8 --mem=32G --gres=gpu:1 --output=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_workload_labram_coords3d_rbf_%j.out --error=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_workload_labram_coords3d_rbf_%j.err /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/tmp/stage2_bundle_runner.sh /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/labram/stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s43.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/labram/stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s44.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/labram/stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s45.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/labram/stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s46.yaml
+[2026-05-17 11:30:24] submitted bundle job 14051396 for workload/labram coords3d_rbf coords3d_rbf_axes_n6_residual
+[2026-05-17 11:30:24] updated manifest rows ['stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s43', 'stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s44', 'stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s45', 'stage2_promote_workload_labram_coords3d_rbf_axes_n6_residual_s46'] with submitted_bundle=14051396
+[2026-05-17 11:30:24] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:30:24] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:30:24] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:30:24] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:30:24] submitted bundles: 14051395, 14051396
+[2026-05-17 11:30:24] progress: 4/9 groups complete
+[2026-05-17 11:30:24] sleeping 600s before next check
+[2026-05-17 11:40:24] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:40:25] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:40:25] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396 --format=JobIDRaw,State -n -P
+[2026-05-17 11:40:25] winners ready for promotion: workload/cbramod -> coords3d_rbf coords3d_rbf_axes_n6_pair64 bacc=0.5866666666666667
+[2026-05-17 11:40:25] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/eegfm_spatial_search.py promote --leaderboard /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/leaderboard.filtered_for_stage2.tsv
+[2026-05-17 11:40:25] promote: appended_stage2_rows=4
+[2026-05-17 11:40:25] promote: manifest=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/manifest.tsv
+[2026-05-17 11:40:25] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:40:25] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:40:25] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:40:25] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:40:25] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396 --format=JobIDRaw,State -n -P
+[2026-05-17 11:40:25] RUN sbatch --parsable --job-name=ss2b_workload_cbramod --partition=pi_tpoggio,mit_preemptable --time=08:00:00 --cpus-per-task=8 --mem=32G --gres=gpu:1 --output=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_workload_cbramod_coords3d_rbf_%j.out --error=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_workload_cbramod_coords3d_rbf_%j.err /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/tmp/stage2_bundle_runner.sh /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/cbramod/stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s43.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/cbramod/stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s44.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/cbramod/stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s45.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/workload/cbramod/stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s46.yaml
+[2026-05-17 11:40:26] submitted bundle job 14051596 for workload/cbramod coords3d_rbf coords3d_rbf_axes_n6_pair64
+[2026-05-17 11:40:26] updated manifest rows ['stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s43', 'stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s44', 'stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s45', 'stage2_promote_workload_cbramod_coords3d_rbf_axes_n6_pair64_s46'] with submitted_bundle=14051596
+[2026-05-17 11:40:26] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:40:26] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:40:26] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:40:26] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:40:26] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:40:26] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:40:26] submitted bundles: 14051596
+[2026-05-17 11:40:26] progress: 5/9 groups complete
+[2026-05-17 11:40:26] sleeping 600s before next check
+[2026-05-17 11:50:26] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 11:50:26] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 11:50:26] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 11:50:26] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 11:50:26] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 5 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 6 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 11:50:26] summary: | motor_mv_img | cbramod | 7 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 57.97 |  |
+[2026-05-17 11:50:26] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596 --format=JobIDRaw,State -n -P
+[2026-05-17 11:50:26] progress: 7/9 groups complete
+[2026-05-17 11:50:26] sleeping 600s before next check
+[2026-05-17 12:00:26] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:00:27] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:00:27] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596 --format=JobIDRaw,State -n -P
+[2026-05-17 12:00:27] winners ready for promotion: motor_mv_img/cbramod -> coords3d_rbf coords3d_rbf_axes_n6_pair64 bacc=0.6017892090851962
+[2026-05-17 12:00:27] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/eegfm_spatial_search.py promote --leaderboard /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/leaderboard.filtered_for_stage2.tsv
+[2026-05-17 12:00:27] promote: appended_stage2_rows=4
+[2026-05-17 12:00:27] promote: manifest=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/manifest.tsv
+[2026-05-17 12:00:27] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:00:27] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:00:27] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:00:27] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:00:27] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596 --format=JobIDRaw,State -n -P
+[2026-05-17 12:00:27] RUN sbatch --parsable --job-name=ss2b_mvimg_cbramod --partition=pi_tpoggio,mit_preemptable --time=08:00:00 --cpus-per-task=8 --mem=32G --gres=gpu:1 --output=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_motor_mv_img_cbramod_coords3d_rbf_%j.out --error=/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/slurm_logs/stage2_bundle_motor_mv_img_cbramod_coords3d_rbf_%j.err /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/tmp/stage2_bundle_runner.sh /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/motor_mv_img/cbramod/stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s43.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/motor_mv_img/cbramod/stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s44.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/motor_mv_img/cbramod/stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s45.yaml /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage2_promote/motor_mv_img/cbramod/stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s46.yaml
+[2026-05-17 12:00:27] submitted bundle job 14051905 for motor_mv_img/cbramod coords3d_rbf coords3d_rbf_axes_n6_pair64
+[2026-05-17 12:00:27] updated manifest rows ['stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s43', 'stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s44', 'stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s45', 'stage2_promote_motor_mv_img_cbramod_coords3d_rbf_axes_n6_pair64_s46'] with submitted_bundle=14051905
+[2026-05-17 12:00:27] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:00:28] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:00:28] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:00:28] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:00:28] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:00:28] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:00:28] submitted bundles: 14051905
+[2026-05-17 12:00:28] progress: 8/9 groups complete
+[2026-05-17 12:00:28] sleeping 600s before next check
+[2026-05-17 12:10:28] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:10:28] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:10:28] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:10:28] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:10:28] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:10:28] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:10:28] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 12:10:28] progress: 8/9 groups complete
+[2026-05-17 12:10:28] sleeping 600s before next check
+[2026-05-17 12:20:28] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:20:29] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:20:29] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:20:29] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:20:29] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:20:29] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:20:29] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 12:20:29] progress: 8/9 groups complete
+[2026-05-17 12:20:29] sleeping 600s before next check
+[2026-05-17 12:30:29] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:30:29] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:30:29] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:30:29] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:30:29] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 1 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 1 | 60.18 | * |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 2 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:30:29] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:30:29] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 12:30:29] progress: 8/9 groups complete
+[2026-05-17 12:30:29] sleeping 600s before next check
+[2026-05-17 12:40:29] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:40:30] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:40:30] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:40:30] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:40:30] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 2 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 2 | 59.70 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:40:30] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:40:30] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 12:40:30] progress: 8/9 groups complete
+[2026-05-17 12:40:30] sleeping 600s before next check
+[2026-05-17 12:50:30] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 12:50:30] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 12:50:30] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 12:50:30] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 12:50:30] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 2 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 2 | 59.70 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 12:50:30] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 12:50:30] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 12:50:30] progress: 8/9 groups complete
+[2026-05-17 12:50:30] sleeping 600s before next check
+[2026-05-17 13:00:30] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 13:00:31] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 13:00:31] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 13:00:31] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 13:00:31] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 2 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 2 | 59.70 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 4 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 13:00:31] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 13:00:31] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 13:00:31] progress: 8/9 groups complete
+[2026-05-17 13:00:31] sleeping 600s before next check
+[2026-05-17 13:10:31] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 13:10:31] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 13:10:31] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 13:10:31] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 13:10:31] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 3 | 59.10 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 13:10:31] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 13:10:31] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 13:10:31] progress: 8/9 groups complete
+[2026-05-17 13:10:31] sleeping 600s before next check
+[2026-05-17 13:20:31] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 13:20:32] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 13:20:32] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 13:20:32] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 13:20:32] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 3 | 59.10 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 13:20:32] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 13:20:32] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 13:20:32] progress: 8/9 groups complete
+[2026-05-17 13:20:32] sleeping 600s before next check
+[2026-05-17 13:30:32] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 13:30:32] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 13:30:32] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 13:30:32] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 13:30:32] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 3 | 59.10 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 13:30:32] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 13:30:32] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 13:30:32] progress: 8/9 groups complete
+[2026-05-17 13:30:32] sleeping 600s before next check
+[2026-05-17 13:40:32] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 13:40:33] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 13:40:33] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 13:40:33] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 13:40:33] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 4 | 59.23 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 13:40:33] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 13:40:33] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 13:40:33] progress: 8/9 groups complete
+[2026-05-17 13:40:33] sleeping 600s before next check
+[2026-05-17 13:50:33] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 13:50:33] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 13:50:33] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 13:50:33] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 13:50:33] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 4 | 59.23 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 13:50:33] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 13:50:33] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 13:50:33] progress: 8/9 groups complete
+[2026-05-17 13:50:33] sleeping 600s before next check
+[2026-05-17 14:00:33] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 14:00:34] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 14:00:34] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 14:00:34] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 14:00:34] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 4 | 59.23 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 14:00:34] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 14:00:34] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 14:00:34] progress: 8/9 groups complete
+[2026-05-17 14:00:34] sleeping 600s before next check
+[2026-05-17 14:10:34] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 14:10:34] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 14:10:34] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 14:10:34] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 14:10:34] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 4 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 4 | 59.23 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 5 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 14:10:34] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 14:10:34] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 14:10:34] progress: 8/9 groups complete
+[2026-05-17 14:10:34] sleeping 600s before next check
+[2026-05-17 14:20:34] RUN /home/erimoldi/.conda/envs/sparse-hate/bin/python /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/scripts/train/summarize_eegfm_spatial_search.py
+[2026-05-17 14:20:35] summary: | bcic_2a | cbramod | 8 | coords3d_distbias | coords3d_distbias_pair64_scale0p02_n8 | 1 | 30.12 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | cbramod | 9 | coords3d_distbias | coords3d_distbias_pair64_scale0p05_n8 | 1 | 30.12 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | cbramod | 10 | coords3d_rbf | coords3d_rbf_axes_n8_pair128 | 1 | 29.60 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | cbramod | 11 | coords3d_reference | coords3d_reference_pair64 | 1 | 27.86 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | labram | 1 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_replace | 1 | 28.39 | * |
+[2026-05-17 14:20:35] summary: | bcic_2a | labram | 2 | coords3d_rbf | coords3d_rbf_axes_n6_residual | 5 | 28.18 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | labram | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_residual | 1 | 27.08 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | labram | 4 | coords3d_reference | coords3d_reference_replace | 1 | 26.74 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | labram | 5 | coords3d_rbf | coords3d_rbf_axes_n6_replace | 1 | 26.39 |  |
+[2026-05-17 14:20:35] summary: | bcic_2a | labram | 6 | coords3d_reference | coords3d_reference_residual | 1 | 24.48 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | biot | 1 | coords3d_reference | coords3d_reference_gain0p10 | 1 | 28.61 | * |
+[2026-05-17 14:20:35] summary: | motor_mv_img | biot | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_gain0p10 | 1 | 28.14 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | biot | 3 | coords3d_rbf | coords3d_rbf_axes_n6_gain0p10 | 5 | 27.74 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 1 | coords3d_reference | coords3d_reference_pair64 | 1 | 59.86 | * |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 2 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axes_n6_pair64 | 1 | 59.54 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 3 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_pair64_graph1_k4 | 1 | 59.28 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 4 | coords3d_reference | coords3d_reference_pair128 | 1 | 58.80 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 5 | coords3d_rbf | coords3d_rbf_axes_n6_pair64 | 5 | 58.80 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 6 | coords3d_geodesic_rbf | coords3d_geodesic_rbf_axesdiag_n4_pair64 | 1 | 58.65 |  |
+[2026-05-17 14:20:35] summary: | motor_mv_img | cbramod | 7 | coords3d_distbias | coords3d_distbias_pair128_scale0p05_n12 | 1 | 58.34 |  |
+[2026-05-17 14:20:35] RUN sacct -j 14050185,14050186,14050187,14050188,14050189,14051395,14051396,14051596,14051905 --format=JobIDRaw,State -n -P
+[2026-05-17 14:20:35] progress: 9/9 groups complete
+[2026-05-17 14:20:35] all 9 groups reached 5 seeds; monitor exiting cleanly

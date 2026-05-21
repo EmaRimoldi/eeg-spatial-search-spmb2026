@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_workload_biot_coords3d_geodesic_rbf_axes_n6_gain0p10_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 54,
+  "config": "/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage1_screen/workload/biot/stage1_screen_workload_biot_coords3d_geodesic_rbf_axes_n6_gain0p10_s42.yaml",
+  "updated_at": "2026-05-17T14:53:27.079332Z"
+}

@@ -1,0 +1,48 @@
+backbone: labram
+spatial_variant: coords3d_geodesic_rbf
+freeze_policy: full
+dataset: bcic_2a
+num_classes: 4
+seed: 42
+epochs: 30
+batch_size: 64
+num_workers: 4
+allow_synthetic_fallback: false
+smoke_test: false
+checkpoint: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/LaBraM/checkpoints/labram-base.pth
+optimizer:
+  name: adamw
+  lr: 0.0008
+  weight_decay: 0.05
+  backbone_lr: 8.0e-05
+  head_lr: 0.0008
+  spatial_lr: 0.0008
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+early_stopping_patience: 1000
+wrapper_kwargs:
+  eeg_size: 800
+  patch_size: 200
+  classifier_hidden_dims:
+  - 128
+  dropout: 0.3
+  input_scale: 0.01
+  spatial_embedding_kwargs: &id001
+    anchor_mode: axes
+    n_rbf: 6
+  spatial_pos_mode: residual
+search:
+  run_id: stage1_screen_bcic2a_labram_coords3d_geodesic_rbf_axes_n6_residual_s42
+  stage: stage1_screen
+  dataset: bcic_2a
+  dataset_slug: bcic2a
+  backbone: labram
+  variant: coords3d_geodesic_rbf
+  seed: 42
+  hparams_id: coords3d_geodesic_rbf_axes_n6_residual
+  hparams:
+    spatial_embedding_kwargs: *id001
+    spatial_pos_mode: residual
+  manifest: results/spatial_search_labram_fix/manifest.tsv
+  baseline_fixed_externally: true

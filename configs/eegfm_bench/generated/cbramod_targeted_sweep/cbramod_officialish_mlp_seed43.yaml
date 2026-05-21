@@ -1,0 +1,42 @@
+seed: 43
+master_port: 56143
+multitask: false
+model_type: cbramod
+fs: 200
+
+data:
+  datasets:
+    bcic_2a: finetune
+  batch_size: 64
+  num_workers: 4
+
+model:
+  pretrained_path: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/external/CBraMod/pretrained_weights/pretrained_weights.pth
+  classifier_head:
+    head_type: avg_pool
+    hidden_dims: [128]
+    dropout: 0.1
+
+training:
+  max_epochs: 50
+  weight_decay: 0.05
+  max_grad_norm: 1.0
+  lr_schedule: cosine
+  max_lr: 5.0e-4
+  encoder_lr_scale: 0.2
+  warmup_epochs: 5
+  warmup_scale: 1.0e-2
+  min_lr: 1.0e-6
+  use_amp: false
+  freeze_encoder: false
+  label_smoothing: 0.1
+
+logging:
+  experiment_name: cbramod_officialish_mlp_seed43
+  run_dir: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/eegfm_bench
+  use_cloud: false
+  cloud_backend: wandb
+  project: cbramod
+  tags: [cbramod, bcic2a, targeted-sweep, officialish, mlp]
+  log_step_interval: 1
+  ckpt_interval: 5

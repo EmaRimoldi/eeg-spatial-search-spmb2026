@@ -1,0 +1,38 @@
+seed: 42
+master_port: 51120
+multitask: false
+model_type: eegnet
+fs: 200
+
+data:
+  datasets:
+    bcic_2a: finetune
+  batch_size: 1024
+  num_workers: 1
+
+model:
+  pretrained_path: null
+
+training:
+  max_epochs: 200
+  weight_decay: 0.01
+  max_grad_norm: 3.0
+  lr_schedule: cosine
+  max_lr: 5.0e-3
+  encoder_lr_scale: 1.0
+  warmup_epochs: 5
+  warmup_scale: 1.0e-1
+  pct_start: 0.1
+  min_lr: 5.0e-4
+  use_amp: false
+  freeze_encoder: false
+
+logging:
+  experiment_name: eegnet_bcic2a
+  run_dir: /home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/eegfm_bench
+  use_cloud: false
+  cloud_backend: wandb
+  project: eegnet
+  tags: [eegfm-bench, bcic2a, bnci2014_001, reproduction]
+  log_step_interval: 1
+  ckpt_interval: 50

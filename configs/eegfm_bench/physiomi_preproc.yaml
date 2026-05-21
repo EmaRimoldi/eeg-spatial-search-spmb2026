@@ -1,0 +1,8 @@
+fs: 200
+clean_middle_cache: true
+clean_shared_info: true
+num_preproc_arrow_writers: 2
+num_preproc_mid_workers: 4
+pretrain_datasets: []
+finetune_datasets:
+  motor_mv_img: finetune

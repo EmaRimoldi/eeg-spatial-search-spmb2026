@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_motor_mv_img_biot_coords3d_rbf_axes_n6_gain0p10_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 27,
+  "config": "/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage1_screen/motor_mv_img/biot/stage1_screen_motor_mv_img_biot_coords3d_rbf_axes_n6_gain0p10_s42.yaml",
+  "updated_at": "2026-05-17T11:42:18.113955Z"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "snapshot": {
+    "timestamp": "2026-05-17T18:20:35.246070Z",
+    "final_groups_done": [
+      [
+        "bcic_2a",
+        "biot"
+      ],
+      [
+        "bcic_2a",
+        "cbramod"
+      ],
+      [
+        "bcic_2a",
+        "labram"
+      ],
+      [
+        "motor_mv_img",
+        "biot"
+      ],
+      [
+        "motor_mv_img",
+        "cbramod"
+      ],
+      [
+        "motor_mv_img",
+        "labram"
+      ],
+      [
+        "workload",
+        "biot"
+      ],
+      [
+        "workload",
+        "cbramod"
+      ],
+      [
+        "workload",
+        "labram"
+      ]
+    ],
+    "n_final_groups_done": 9,
+    "pending_focus_stage1": []
+  }
+}

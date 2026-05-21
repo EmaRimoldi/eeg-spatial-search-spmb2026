@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_bcic2a_cbramod_coords3d_distbias_pair64_scale0p02_n8_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 16,
+  "config": "/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage1_screen/bcic2a/cbramod/stage1_screen_bcic2a_cbramod_coords3d_distbias_pair64_scale0p02_n8_s42.yaml",
+  "updated_at": "2026-05-17T10:40:11.856149Z"
+}

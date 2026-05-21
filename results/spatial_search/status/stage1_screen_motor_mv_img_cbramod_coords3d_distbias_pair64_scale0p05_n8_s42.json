@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_motor_mv_img_cbramod_coords3d_distbias_pair64_scale0p05_n8_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 43,
+  "config": "/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage1_screen/motor_mv_img/cbramod/stage1_screen_motor_mv_img_cbramod_coords3d_distbias_pair64_scale0p05_n8_s42.yaml",
+  "updated_at": "2026-05-17T13:59:27.943053Z"
+}

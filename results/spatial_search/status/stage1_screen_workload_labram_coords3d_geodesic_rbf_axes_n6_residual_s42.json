@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_workload_labram_coords3d_geodesic_rbf_axes_n6_residual_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 60,
+  "config": "/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/results/spatial_search/generated_configs/stage1_screen/workload/labram/stage1_screen_workload_labram_coords3d_geodesic_rbf_axes_n6_residual_s42.yaml",
+  "updated_at": "2026-05-17T14:56:57.196914Z"
+}

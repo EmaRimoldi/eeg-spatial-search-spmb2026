@@ -1,0 +1,16 @@
+dataset	model	seed	config	job_name	dataset_key
+mimul11	biot	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/biot_seed42.yaml	efm_biot_mimul11_t2_s42	mimul_11
+mimul11	biot	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/biot_seed43.yaml	efm_biot_mimul11_t2_s43	mimul_11
+mimul11	biot	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/biot_seed44.yaml	efm_biot_mimul11_t2_s44	mimul_11
+mimul11	biot	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/biot_seed45.yaml	efm_biot_mimul11_t2_s45	mimul_11
+mimul11	biot	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/biot_seed46.yaml	efm_biot_mimul11_t2_s46	mimul_11
+mimul11	cbramod	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/cbramod_seed42.yaml	efm_cbramod_mimul11_t2_s42	mimul_11
+mimul11	cbramod	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/cbramod_seed43.yaml	efm_cbramod_mimul11_t2_s43	mimul_11
+mimul11	cbramod	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/cbramod_seed44.yaml	efm_cbramod_mimul11_t2_s44	mimul_11
+mimul11	cbramod	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/cbramod_seed45.yaml	efm_cbramod_mimul11_t2_s45	mimul_11
+mimul11	cbramod	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/cbramod_seed46.yaml	efm_cbramod_mimul11_t2_s46	mimul_11
+mimul11	labram	42	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/labram_seed42.yaml	efm_labram_mimul11_t2_s42	mimul_11
+mimul11	labram	43	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/labram_seed43.yaml	efm_labram_mimul11_t2_s43	mimul_11
+mimul11	labram	44	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/labram_seed44.yaml	efm_labram_mimul11_t2_s44	mimul_11
+mimul11	labram	45	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/labram_seed45.yaml	efm_labram_mimul11_t2_s45	mimul_11
+mimul11	labram	46	/home/erimoldi/openclaw_remote/projects/eeg-spatial-paper/configs/eegfm_bench/generated/mimul11_table2_5seed/labram_seed46.yaml	efm_labram_mimul11_t2_s46	mimul_11

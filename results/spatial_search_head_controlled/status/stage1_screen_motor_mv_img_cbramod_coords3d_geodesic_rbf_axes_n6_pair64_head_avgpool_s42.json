@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_motor_mv_img_cbramod_coords3d_geodesic_rbf_axes_n6_pair64_head_avgpool_s42",
+  "status": "running",
+  "exit_code": 0,
+  "task_id": 10,
+  "config": "results/spatial_search_head_controlled/generated_configs/stage1_screen/motor_mv_img/cbramod/stage1_screen_motor_mv_img_cbramod_coords3d_geodesic_rbf_axes_n6_pair64_head_avgpool_s42.yaml",
+  "updated_at": "2026-05-21T23:15:04.463919Z"
+}

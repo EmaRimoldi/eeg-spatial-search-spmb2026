@@ -1,0 +1,8 @@
+{
+  "run_id": "stage1_screen_motor_mv_img_biot_coords3d_gain0p10_s42",
+  "status": "completed",
+  "exit_code": 0,
+  "task_id": 26,
+  "config": "configs/eegfm_bench/generated/spatial_search/stage1_screen/motor_mv_img/biot/stage1_screen_motor_mv_img_biot_coords3d_gain0p10_s42.yaml",
+  "updated_at": "2026-05-21T20:55:11.493042Z"
+}

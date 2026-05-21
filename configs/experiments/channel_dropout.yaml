@@ -1,0 +1,67 @@
+# Missing-channel robustness experiment
+# Stage 4: Simulate practical EEG incompleteness
+#
+# Protocol: Apply channel dropout at test time to models trained on full data
+# Measures how robust each spatial variant is to missing channels
+
+experiment:
+  name: channel_dropout
+  stage: 4
+
+model:
+  backbone: reve
+  checkpoint: huggingface
+  embed_dim: 512
+  freeze_policy: head_only
+
+# Strongest 4 variants
+spatial_variants:
+  - channel_id
+  - coords3d
+  - coords3d_reference
+  - topology_agnostic
+
+dataset:
+  name: BNCI2014_001
+  task: motor_imagery
+  source: moabb
+  num_classes: 4
+
+# Channel corruption protocols
+dropout_protocols:
+  - name: random_p01
+    mode: random
+    dropout_prob: 0.1
+
+  - name: random_p03
+    mode: random
+    dropout_prob: 0.3
+
+  - name: random_p05
+    mode: random
+    dropout_prob: 0.5
+
+  - name: structured_frontal
+    mode: structured
+    drop_regions: [frontal, frontal_polar]
+
+  - name: structured_occipital
+    mode: structured
+    drop_regions: [occipital, parietal]
+
+  - name: sparse_layout
+    mode: subset
+    keep_channels: [Fz, C3, Cz, C4, Pz]  # minimal 5-channel layout
+
+training:
+  seeds: [42, 123, 456]
+  epochs: 100
+  batch_size: 32
+  # Train on full channel set, test with dropout
+
+evaluation:
+  metrics: [accuracy, balanced_accuracy]
+  plot_robustness_curves: true
+
+logging:
+  run_dir: results/logs

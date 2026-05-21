@@ -1,0 +1,3 @@
+model,log_path,final_epoch,final_test_bacc,best_test_epoch,best_test_bacc,best_eval_epoch,test_at_best_eval_bacc,test_at_best_eval_acc,test_at_best_eval_kappa,test_at_best_eval_f1,paper_target_bacc,delta_vs_paper_bacc
+cbramod,results/eegfm_bench/log/baseline/cbramod/torchrun_260515105552/cbramod_trainer.log,49,31.1,46,31.5,48,31.1,31.1,8.1,23.200000000000003,33.71,-2.6099999999999994
+labram,results/eegfm_bench/log/baseline/labram/torchrun_260515105606/labram_trainer.log,29,32.2,21,34.2,11,31.2,31.2,8.200000000000001,24.2,29.03,2.169999999999998

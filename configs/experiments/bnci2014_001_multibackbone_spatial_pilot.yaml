@@ -1,0 +1,49 @@
+# Multi-backbone spatial-coordinate pilot.
+# 3 backbones x 4 spatial variants x 5 seeds = 60 head-only runs.
+
+experiment:
+  name: bnci2014_001_multibackbone_spatial_pilot
+
+dataset: BNCI2014_001
+num_classes: 4
+freeze_policy: head_only
+
+backbones:
+  - biot
+  - labram
+  - cbramod
+
+spatial_variants:
+  - coords2d
+  - coords3d
+  - coords3d_distbias
+
+seeds:
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+
+training:
+  epochs: 50
+  batch_size: 32
+  lr: 1.0e-4
+  output_dir: results/pilot_bnci2014_001_multibackbone
+  smoke_test: false
+  allow_synthetic_fallback: false
+
+model_kwargs:
+  biot:
+    max_channels: 64
+    n_fft: 200
+    hop_length: 100
+  labram:
+    spatial_pos_mode: residual
+    eeg_size: 1000
+    patch_size: 200
+  cbramod:
+    n_channels: 22
+    eeg_size: 1000
+    classifier_head:
+      head_type: flatten_mlp

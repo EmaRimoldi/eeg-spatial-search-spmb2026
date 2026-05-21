@@ -1,0 +1,20 @@
+# LaBraM base model configuration
+# Checkpoint: external/LaBraM/checkpoints/labram-base.pth
+# (May need git lfs pull to download actual weights)
+
+backbone: labram
+embed_dim: 200
+checkpoint: external/LaBraM/checkpoints/labram-base.pth
+
+freeze_policy: head_only
+dropout: 0.1
+
+# LaBraM uses fixed channel order (standard 10-20)
+# Missing channels are zero-padded
+fixed_channel_order: true
+
+# Reference: external/LaBraM/README.md
+labram_arch:
+  embed_dim: 200
+  depth: 12
+  num_heads: 10
